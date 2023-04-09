@@ -9,7 +9,7 @@ function App() {
     <>
     {/* <Navbar></Navbar> */}
     <Routes>
-      <Route path = "/" element = {<Home></Home>}></Route>
+      <Route path = "/portfolio" element = {<Home></Home>}></Route>
       <Route path = "/about" element = {<Home></Home>}></Route>
       <Route path = "/projects" element = {<Projects></Projects>}></Route>
       <Route path = "/contact" element = {<Home></Home>}></Route>
