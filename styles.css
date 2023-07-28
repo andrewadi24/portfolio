@@ -1,0 +1,36 @@
+.gray-bg {
+    background-color: rgb(51, 51, 51);
+    color: aliceblue;
+}
+
+.green-underline {
+    border-bottom: 3px solid green;
+}
+body{
+    background-color: rgb(51, 51, 51);
+    color: aliceblue;
+}
+.navbar-brand,
+.nav-link {
+  color: green;
+}
+.active{
+    color: green!important;
+}
+.skills_card{
+    background-color: transparent;
+    border: none;
+}
+.btn-primary{
+    background-color: green;
+    color: aliceblue;
+    border: white;
+}
+.underline{
+    border-bottom: 3px solid green;
+}
+.project_card{
+    color: aliceblue;
+    
+    background-color: transparent
+}
