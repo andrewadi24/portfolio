@@ -1,38 +1,321 @@
-.App {
-  text-align: center;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  line-height: 1;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #1E1E1E !important;
+  color: white !important;
+}
+
+.primary {
+  color: #C778DD !important;
+}
+
+button {
+  background-color: #1E1E1E !important;
+  color: #fff !important;
+  border: 1px solid #C778DD !important;
+  border-radius: 0px !important;
+}
+
+.my-nav li::before {
+  content: "#";
+  color: #C778DD;
+}
+
+.my-nav ul li {
+  display: inline;
+  padding: 0px 10px;
+}
+
+.my-nav ul li:last-child {
+  padding-right: 0px;
+}
+
+.quote-text {
+  border: 1px solid white;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  padding: 30px;
+
+}
+
+
+.quote-text h2::before {
+  content: '“';
+  color: #C778DD;
+  background-color: #1E1E1E;
+  font-size: 70px;
+  position: absolute;
+  top: -30px;
+  left: 10px;
+  display: inline-block;
+  width: 30px;
+  max-height: 40px;
+}
+
+.quote-text h2::after {
+  content: '”';
+  color: #C778DD;
+  background-color: #1E1E1E;
+  font-size: 70px;
+  position: absolute;
+  bottom: -54px;
+  right: 10px;
+  height: fit-content;
+}
+
+.h1_before::before {
+  content: "#";
+  color: #C778DD;
+  padding-right: 2px;
+}
+
+.h1_before {
+  margin: auto 0;
+}
+
+.card {
+  background-color: #1E1E1E !important;
+  color: white !important;
+  border: 1px solid #ABB2BF !important;
+  border-radius: 0px !important;
+}
+
+.card-body {
+  border-bottom: 1px solid white;
+}
+
+.line-75 {
+  width: 75% !important;
+
+}
+
+hr {
+  width: 75%;
+  height: 100%;
+  border: 3px solid #C778DD !important;
+}
+
+.center {
+  margin: auto 0;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.rtl .card {
+  direction: ltr;
+}
+
+.link {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.link:hover {
+  text-decoration: underline !important;
+  color: #C778DD !important;
+}
+
+.h1_slash::before {
+  content: "/";
+  color: #C778DD;
+  padding-right: 2px;
+}
+
+.form-control {
+  background-color: #1E1E1E !important;
+  color: white !important;
+  border: 1px solid #ABB2BF !important;
+  border-radius: 0px !important;
+}
+
+.form-control::placeholder {
+  color: #ABB2BF !important;
+}
+
+body {
+  font-family: 'Fira Code', monospace !important;
+}
+
+p {
+  color: gray;
+}
+
+.mobile {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile {
+    display: block;
+    margin-top: 7px;
+
+  }
+
+  .desktop {
+    display: none;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.first-line{
+  width: 24px;
+  height: 5px;
+  background-color: whitesmoke;
+  margin: 0 auto;
 }
-
-.App-link {
-  color: #61dafb;
+.second-line {
+  width: 16px;
+  height: 5px;
+  background-color: whitesmoke;
+  margin-top: 2px;
+  margin-left: 8px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hidden{
+  display: none;
+}
+.menu{
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+  background-color: #1E1E1E;
+  margin: auto;
+  margin: 0px;
+  padding: 10px;
+}
+.hover:hover{
+  cursor: pointer;
+}
+.menu ul li{
+  display: block;
+}
+.menu-container {
+  margin: auto;
 }
