@@ -56,7 +56,6 @@ const Navbar = () => {
                             <i className="fas fa-times"></i>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>

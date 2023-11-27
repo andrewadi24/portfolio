@@ -332,7 +332,7 @@ p {
 /* Styles for .limit scrollbar */
 .limit {
   overflow-y: auto;
-  max-height: 200px;
+    height: 200px;
 
   /* Firefox scrollbar styles */
   scrollbar-width: thin;
@@ -349,9 +349,11 @@ p {
 }
 
 .limit::-webkit-scrollbar-thumb {
-  background: #C778DD; /* Updated color for the scrollbar handle */
+  background: #C778DD;
+  /* Updated color for the scrollbar handle */
 }
 
 .limit::-webkit-scrollbar-thumb:hover {
-  background: #9558B2; /* Adjusted color on hover */
+  background: #9558B2;
+  /* Adjusted color on hover */
 }

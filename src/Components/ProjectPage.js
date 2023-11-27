@@ -7,7 +7,7 @@ const ProjectPage = () => {
             <h1 className='h1_slash'>Projects</h1>
             <p>List of my projects</p>
 
-            <div className='row mt-5'>
+            <div className='mt-5'>
                 <h2 className='h1_before'>complete-apps</h2>
                 <div className='my-card-container row'>
                     <MyCard stack="REACT.JS JAVSCRIPT HTML CSS" title="PK_Curves - Capstone project for University of Sydney Pharmacy School" text="Empowering students with an interactive experience in understanding pharmacokinetics. The platform offers dynamic graph visualizations that change in real-time based on user input, providing immediate insights into complex pharmacological equations." demo="https://andrewadi24.github.io/pharmacokinetics/"></MyCard>
