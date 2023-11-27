@@ -283,12 +283,14 @@ p {
     display: none;
   }
 }
-.first-line{
+
+.first-line {
   width: 24px;
   height: 5px;
   background-color: whitesmoke;
   margin: 0 auto;
 }
+
 .second-line {
   width: 16px;
   height: 5px;
@@ -296,10 +298,12 @@ p {
   margin-top: 2px;
   margin-left: 8px;
 }
-.hidden{
+
+.hidden {
   display: none;
 }
-.menu{
+
+.menu {
   top: 0px;
   left: 0px;
   height: 100vh;
@@ -309,13 +313,45 @@ p {
   margin: auto;
   margin: 0px;
   padding: 10px;
+  z-index: 1;
 }
-.hover:hover{
+
+.hover:hover {
   cursor: pointer;
 }
-.menu ul li{
+
+.menu ul li {
   display: block;
 }
+
 .menu-container {
   margin: auto;
+}
+
+/* Styles for .limit scrollbar */
+/* Styles for .limit scrollbar */
+.limit {
+  overflow-y: auto;
+  max-height: 200px;
+
+  /* Firefox scrollbar styles */
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+/* WebKit scrollbar styles */
+.limit::-webkit-scrollbar {
+  width: 10px;
+}
+
+.limit::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.limit::-webkit-scrollbar-thumb {
+  background: #C778DD; /* Updated color for the scrollbar handle */
+}
+
+.limit::-webkit-scrollbar-thumb:hover {
+  background: #9558B2; /* Adjusted color on hover */
 }

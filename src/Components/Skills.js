@@ -6,6 +6,7 @@ const Skills = () => {
     let tools_list = ["Git", "VSCode", "Linux", "Figma"]
     let database_list = ["MySQL", "MongoDB"]
     let framework_list = ["React", "Node.js", "Express.js", "Flask", "Django"]
+    let software_practices_list = ["Agile", "Object-Oriented programming", "Responsive Web Design", "RESTful API", "CI/CD"]
     return (
         <div className='container mt-5'>
             <h1 className='h1_before'>Skills</h1>
@@ -19,6 +20,7 @@ const Skills = () => {
                         <SkillCard title="Databases" skill_list={database_list}></SkillCard>
                         <SkillCard title="Languages" skill_list={language_list}></SkillCard>
                         <SkillCard title="Frameworks" skill_list={framework_list}></SkillCard>
+                        <SkillCard title="Software Development Practices" skill_list={software_practices_list}></SkillCard>
                     </div>
                 </div>
             </div>
