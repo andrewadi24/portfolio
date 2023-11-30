@@ -1,12 +1,17 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import MyCard from './MyCard'
-
 const ProjectPage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+
+        return () => {
+
+        }
+    }, [])
     return (
         <div className='container'>
             <h1 className='h1_slash'>Projects</h1>
             <p>List of my projects</p>
-
             <div className='mt-5'>
                 <h2 className='h1_before'>complete-apps</h2>
                 <div className='my-card-container row'>

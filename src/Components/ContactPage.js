@@ -1,6 +1,13 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 const ContactPage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+
+        return () => {
+
+        }
+    }, [])
     return (
         <div className='container'>
             <h1 className='h1_slash'>Contact</h1>

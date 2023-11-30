@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import photo from '../photo_img.png'
 import SkillCard from './SkillCard'
 const AboutPage = () => {
@@ -6,6 +6,14 @@ const AboutPage = () => {
     let tools_list = ["Git", "VSCode", "Linux", "Figma"]
     let database_list = ["MySQL", "MongoDB"]
     let framework_list = ["React", "Node.js", "Express.js", "Flask", "Django"]
+    useEffect(() => {
+        window.scrollTo(0, 0)
+
+        return () => {
+
+        }
+    }, [])
+
     return (
         <div className='container'>
             <h1 className='h1_slash'>About</h1>

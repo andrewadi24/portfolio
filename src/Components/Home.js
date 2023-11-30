@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import photo from '../photo_new.png'
 import Projects from './Projects'
 import Skills from './Skills'
@@ -6,6 +6,13 @@ import About from './About'
 import Contact from './Contact'
 import { Link } from 'react-router-dom'
 const Home = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+
+        return () => {
+
+        }
+    }, [])
     return (
         <div className=''>
             <div className='container mt-5 mb-5'>
