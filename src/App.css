@@ -357,3 +357,6 @@ p {
   background: #9558B2;
   /* Adjusted color on hover */
 }
+.card{
+  width: 100%;
+}

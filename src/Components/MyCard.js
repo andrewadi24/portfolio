@@ -2,7 +2,7 @@ import React from 'react'
 
 const MyCard = ({ stack, title, text, demo }) => {
     return (
-        <div className='col-lg-4 d-flex mt-4'>
+        <div className='col-12 col-lg-4 d-flex mt-4'>
             <div class="card">
                 <div className="card-body">
                     <p className='m-0'>{stack}</p>

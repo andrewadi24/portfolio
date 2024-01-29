@@ -24,9 +24,11 @@ const ProjectPage = () => {
                 </div>
             </div>
 
-            <div className='row mt-5'>
+            <div className='mt-5'>
                 <h2 className='h1_before'>small-projects</h2>
-                <div className=''></div>
+                <div className='my-card-container row'>
+                <MyCard stack="REACT.JS JAVSCRIPT HTML CSS" title="Typing test" text="I tried learning React.js by creating a typing test simulator, calculating the user's typing speed in word's per minute." demo="https://andrewadi24.github.io/typing-test/"></MyCard>
+                </div>
             </div>
         </div>
     )
